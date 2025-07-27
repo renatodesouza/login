@@ -12,4 +12,7 @@ class PostListView(ListView):
     ordering = ['-created_at']
     paginate_by = 5
 
-    
+class PostDetailView(DetailView):
+    model = Post
+    template_name = 'blog/post_detail.html'
+
